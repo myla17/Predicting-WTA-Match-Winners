@@ -1,0 +1,13 @@
+MYLA MOORE 
+Project Description:
+
+This project uses data from the below github link which has decades of Women's Tennis Association (WTA) match data from 1968. The goal was to determine if it was possible to predict the winner of a given tennis match using specific attributes about the player and statistics about the match and opponent. I cleaned the data in Tableau prep, made visualizations in Tableau, and ran a logistic regression in R.
+
+This project file includes the following enclosed in folder "WTA":
+Data Dictionary: WTA_DATA_DICT
+Cleaned data: WTA Match Data.csv
+Tableau Visuals: Visuals.twbX
+Logistic Regression Code: logistic_reression.R
+
+
+Github data link: https://github.com/JeffSackmann/tennis_wta

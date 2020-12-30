@@ -1,0 +1,92 @@
+* Many of the columns in the 'matches' files are self-explanatory, or are very similar to previous columns.
+
+tourney_id
+- a unique identifier for each tournament, such as 2020-888. The exact formats are borrowed from several different sources, so while the first four characters are always the year, the rest of the ID doesn't follow a predictable structure.
+
+tourney_name
+surface
+draw_size
+- number of players in the draw, often rounded up to the nearest power of 2. (For instance, a tournament with 28 players may be shown as 32.)
+
+tourney_level
+- For men: 'G' = Grand Slams, 'M' = Masters 1000s, 'A' = other tour-level events, 'C' = Challengers, 'S' = Satellites/ITFs, 'F' = Tour finals and other season-ending events, and 'D' = Davis Cup
+- For women, there are several additional tourney_level codes, including 'P' = Premier, 'PM' = Premier Mandatory, and 'I' = International. The various levels of ITFs are given by the prize money (in thousands), such as '15' = ITF $15,000. Other codes, such as 'T1' for Tier I (and so on) are used for older WTA tournament designations.
+
+tourney_date
+- eight digits, YYYYMMDD, usually the Monday of the tournament week.
+
+match_num
+- a match-specific identifier. Often starting from 1, sometimes counting down from 300, and sometimes arbitrary. 
+
+player_id
+- the player_id used in this repo for the player of the match
+
+player_seed
+player_entry
+- 'WC' = wild card, 'Q' = qualifier, 'LL' = lucky player, 'PR' = protected ranking, 'ITF' = ITF entry, and there are a few others that are occasionally used.
+
+player_name
+player_hand
+player_ht
+- height in centimeters, where available
+
+player_ioc
+- three-character country code
+
+player_age
+- age, in years, as of the tourney_date
+
+player_id
+player_seed
+player_entry
+player_name
+player_hand
+player_ht
+player_ioc
+player_age
+score
+best_of
+- '3' or '5', indicating the the number of sets for this match
+
+round
+minutes
+- match length, where available
+
+player_ace
+- number of aces
+player_df
+-  number of doubles faults
+player_svpt
+- number of serve points
+player_1stIn
+-  number of first serves made
+player_1stWon
+-  number of first-serve points won
+player_2ndWon
+-  number of second-serve points won
+player_serv_games
+- number of serve games
+player_bpSaved
+- number of break points saved
+player_bpFaced
+- number of break points faced
+
+
+player_first_serve_points
+
+player_rank
+- player's ATP or WTA rank, as of the tourney_date, or the most recent ranking date before the tourney_date
+player_rank_points
+- number of ranking points, where available
+player_rank
+player_rank_points
+
+* _doubles_ files notes
+
+The matches_doubles files have similar columns, though not all in the same order.
+
+The identifying information for each player refers to 'player1', 'player2', 'player1', and 'player2'. The labels 1 and 2 are not assigned for any particular reason.
+
+In general, the tournament IDs for doubles results are the same as for singles results (so, for instance, you can see which players entered both draws at the same event), though this is not guaranteed for every single tournament, since some of the data came from different sources.
+
+The stats columns ('w_ace' etc) are per *team*, not per player. That's a function of how tennis stats are typically recorded, not a decision on my part.
